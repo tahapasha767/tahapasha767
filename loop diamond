@@ -1,0 +1,38 @@
+#include<iostream>
+using namespace std;
+int main() {
+int i,j,k,n,l,m;
+cout<<"enter the value for n";
+cin>>n;
+
+for(i=1;i<=(2*n-1);i++)
+{
+   { if(i<=n)
+    {
+    for (k=n-1;k>=i;k--)
+    {
+        cout<<" ";
+    }
+    for(j=1;j<=i;j++)
+    {
+        cout<<"* ";
+    }
+    }
+    else
+    {
+        for(l=1;l<=i-n;l++)
+        {
+            cout<<" ";
+        }
+        for(m=2*n-i;m>=1;m--)
+        
+            cout<<"* ";
+        }
+    }
+    
+    cout<<endl;
+}
+
+
+return 0;
+}
